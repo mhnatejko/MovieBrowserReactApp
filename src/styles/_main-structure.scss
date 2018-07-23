@@ -1,0 +1,19 @@
+.main {      
+    display: flex;
+    flex-direction: column;
+    position: relative;            
+    min-height: 100vh;        
+    color: black;
+}
+
+.section{        
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    background-image: linear-gradient(
+        to right, 
+        rgba(95, 114, 126, 0.6), 
+        rgba(255, 255, 255, 0.692), 
+        rgba(95, 114, 126, 0.6)
+    );       
+}

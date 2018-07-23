@@ -1,0 +1,34 @@
+.footer {    
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    position: relative;
+    background-color: $blue2;
+    color: dirt_white2;    
+    
+    a:link, a:visited, a:hover, a:active {
+        text-decoration: none;
+    }
+    
+    .author {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-right: 4px;
+        margin-bottom: 2px;
+        color: $blue1;  
+        font-size: .7rem;    
+    }
+}
+.tmdb {
+    width: 100px;
+    height: 40px;
+    margin-left: 4px;
+    color: white;  
+    background-image: url("./img/408x161-powered-by-rectangle-green-bb4301c10ddc749b4e79463811a68afebeae66ef43d17bcfd8ff0e60ded7ce99.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

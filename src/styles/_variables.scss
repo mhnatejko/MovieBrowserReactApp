@@ -1,0 +1,23 @@
+$dirt_white2: rgb(241, 237, 228);
+$dirt_white1: #f8f5ec;
+$blue1: #065065;
+$blue2: #222c3f;
+$lightblue: #aecec8;
+$graylight:  rgb(218, 208, 208);
+
+@mixin dark_gradient {
+    background-image: linear-gradient(to right, $blue2, darken($blue2, 20%),$blue2)
+}
+
+
+/*
+#c0c1c4
+#ddd
+
+#f8f5ec
+rgb(172, 156, 156)
+#aecec8
+#222c3f
+
+#286374
+*/

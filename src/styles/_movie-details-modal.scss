@@ -1,0 +1,145 @@
+$font-pc: 1vw;
+$font-mobile: 3vw;
+
+.modal {
+    width: 30vw;
+    position: relative;
+    overflow: hidden;
+    max-height: 100vh;   
+    
+
+    &__header {
+        width: 100%;
+        padding: 6px;       
+        background-color: $dirt_white2;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+        text-align: center;
+        
+        h1, h2 {
+            font-size: 1vw;
+            color: $blue1;
+        }
+        h3 {
+            font-style: italic;
+            font-size: 1vw;
+        }
+    }
+    &__main-content {        
+        display: flex;
+        justify-content: center;
+        margin: 2px;
+        padding: 2px;  
+        font-size: 1vw;
+        img {
+            height: 20vw;
+        }      
+        &--info {
+            margin-left: .5rem;
+            font-size: 1vw;        
+            p {
+                font-size: 1vw;
+            }
+            &-name {
+                font-weight: bold;
+                color: $blue1;
+                font-size: 1vw;
+            }
+        }
+        &--genres{
+           
+            p {          
+                max-width: 1vw;      
+                padding: 4px;
+                border-radius: 5px;
+                font-size: 1vw;
+            }
+        }
+    }
+
+    button {
+        min-width: 2rem;
+        max-height: 2rem;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        transform: rotate(45deg);
+        padding: 0;
+        margin: 2px;
+        font-size: 1.5rem;
+        text-align: center;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;       
+    
+        &:hover {
+            background-color: transparent;
+            box-shadow: none;
+            border: none;
+        }
+    }
+    &__overview {
+        margin: 6px;
+        border-top: 2px solid $blue1;
+        border-bottom: 2px solid $blue1;
+        font-size: 1vw;
+    }
+}
+
+.genres {
+    min-width: 10vw;
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    padding: 2px;      
+    text-align: center; 
+    color: $dirt_white1;
+    @include dark_gradient;
+}
+
+
+@media (orientation: portrait){
+   .modal{
+       width: 80vw;
+       height: auto;
+       font-size: 50vw;
+       & ~ * {
+           font-size: inherit;
+       }   
+       &__header {
+       
+        h1, h2 {
+            font-size: $font-mobile;
+        }
+        h3 {
+            font-size: $font-mobile;
+        }
+    }
+        &__main-content {  
+            font-size: $font-mobile;
+            img {
+                height: 40vw;
+            }      
+            &--info { 
+                font-size: $font-mobile;
+               
+                p {
+                    font-size: $font-mobile;
+                }
+                &-name {    
+                    font-size: $font-mobile;
+                }
+            }
+            &--genres{
+                min-width: 20vw;
+                p {          
+                    font-size: $font-mobile;
+                    max-width: 30vw;
+                }
+            }
+        }
+        &__overview {
+            font-size: $font-mobile;
+        }
+    }
+   
+}

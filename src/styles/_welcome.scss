@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+.welcome-page{
+    height: 100vh;
+    background-image: linear-gradient(
+      to right bottom, $blue2, $blue1), 
+      url('./img/noom-peerapong-30948-unsplash.jpg');
+    background-blend-mode: hue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+
+    div {
+      position: absolute;
+      bottom: .2vh;
+      left: .2vw;    
+      margin: 2rem;
+      font-family: sans-serif;
+  
+      h3 {
+        display: table;
+        padding: 1rem;
+        margin-bottom: .7rem;
+        background-color: #396580;   
+        color: #aab6c3;
+        font-size: 1.5vw;
+        
+      }
+    }
+    
+    button {
+        position: absolute;
+        top: 50%;
+        left:  50%;
+        transform: translate(-50%, -50%);    
+        min-width: 20vw;
+        min-height: 5vw;      
+      
+        text-align: center;   
+        font-size: 2.5vw;
+        cursor: pointer;    
+        animation: 
+            lighter 
+            1.5s
+            ease-out
+            0s
+            alternate
+            infinite
+            none
+            running;
+        &:hover {
+            background-color: #344360;   
+            color: #eefffc;  
+        }
+    }
+}   
+  
+@keyframes lighter {
+    0% {box-shadow: 0 0 5px rgba(255, 255, 255, 0.486);}
+    100% {box-shadow: 0 0 30px rgba(255, 255, 255, 0.603);}
+}

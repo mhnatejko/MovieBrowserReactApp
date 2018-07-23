@@ -1,0 +1,55 @@
+.options {    
+    display: flex;
+    justify-content: flex-start;
+    top: 0;
+    padding: 1.3rem 0 1rem 1rem;
+    background-color: $dirt_white1;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); 
+}
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    input {
+        flex: 1
+    }
+}
+.sortpanel {
+    font-size: 2vw;
+    display: flex;
+    flex-direction: center;
+    flex-wrap: wrap;
+    border-left: 2px solid $blue2;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 15vw;
+    input {
+        flex:1;
+    }
+    &__sort-by {
+        font-size: 1.2vw;
+    }
+}
+
+@media (orientation: portrait){   
+    .options {
+        padding: .5rem 1rem;        
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+   
+    .sortpanel{      
+        padding: 0;         
+        flex-direction: column; 
+        display: flex;
+        justify-content: center;
+        border-left: none;
+        margin: 0;
+        
+        button {
+            min-width: 100%;
+            margin: 2px 0 2px 0;
+        }   
+    }
+}

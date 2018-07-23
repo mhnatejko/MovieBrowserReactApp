@@ -1,0 +1,90 @@
+@import "./_variables.scss";
+
+.findsimilar {
+    display: block;
+    background-color: $blue1;
+    width: 14vw;
+    padding-bottom: 2px;
+    
+    position: fixed;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 2);    
+    right: 0;
+    top: .8vh;
+    z-index: 10;    
+   
+  
+
+   &__miniPosters{
+        display: flex;
+        justify-content: space-around;
+        align-content: space-between;
+        
+      
+
+        div {
+            min-width: 5vw;
+            height: 7.7vw;            
+            
+            background-color: darken($blue1, 5%);
+            margin-bottom: 0.5rem;
+            img {
+                height: 7.7vw;
+            }
+        }
+        
+    }
+
+    &__paragraph {
+        font-size: 1.2vw;
+        text-align: center;
+        &--dots {
+            top: 20px;
+            font-size: 2vw;
+            margin-top: .5vw;      
+        }
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        button {
+            min-width: 45%;
+            margin: 2px;
+            margin-top: 0;
+        }
+    }
+}
+
+.button__similar--{
+    
+    &find{
+        width:45%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    &clear{
+        width: 45%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }   
+}
+
+@media (orientation: portrait){  
+    .findsimilar {
+        top: -.5vh;
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        &__paragraph {
+            font-size: 4vw;
+            text-align: center;
+            &--dots {
+                top: 20px;
+                font-size: 4vw;
+                margin-top: .5vw;      
+            }
+        }
+    }
+}
