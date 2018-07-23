@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://mhnatejko.github.io/MovieBrowserReactApp/",
   "dependencies": {
     "node-sass-chokidar": "^1.3.0",
     "react": "^16.4.1",
