@@ -12,7 +12,7 @@ const customStyles = {
       bottom                : 'auto',
       marginRight           : '-50%',
       transform             : 'translate(-50%, -50%)',
-      padding: "0",
+      padding: "1",
      
       boxShadow: "0px 0px 20px black",
       backgroundColor: "#f8f5ec",
